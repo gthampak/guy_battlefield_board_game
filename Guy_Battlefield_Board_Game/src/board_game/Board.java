@@ -87,7 +87,11 @@ public class Board {
 		
 	}
 
-	
+	/**
+	 * main test 
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Board test = new Board(true);
 		for(int i = 0; i < test.territories[0].getAdjacents().length; i++) {
