@@ -11,6 +11,7 @@ public class Territory {
 	private static final int SW = 3;
 	
 	private int terNumber;
+	private int[] advPoints;
 	
 	private int[] adjTerritories;
 	
@@ -24,14 +25,45 @@ public class Territory {
 		
 		infrastructures = new Infrastructure[NUM_INFRASTRUCTURES];
 		battleCards = new ArrayList<BattleCard>();
+		
+		setAdvantagePoints();
 	}
 	
+	/**
+	 * @return array of adjacent territories
+	 */
 	public int[] getAdjacents() {
 		return adjTerritories;
 	}
 	
+	/**
+	 * @param adjacents; array of adjacent territories
+	 */
 	public void setAdjacents(int[] adjacents) {
 		adjTerritories = adjacents;
+	}
+	
+	/**
+	 * @return Territory's team
+	 */
+	public Team getTeam() {
+		return team;
+	}
+	
+	/**
+	 * Set territory ownership
+	 * 
+	 * @param team
+	 */
+	public void setTeam(Team team) {
+		this.team = team;
+	}
+	
+	public void setAdvantagePoints() {
+		advPoints = new int[4];
+		
+	
+		
 	}
 	
 }
